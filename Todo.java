@@ -5,12 +5,12 @@ import java.util.Date;
 public class Todo {
     private int id;
     private String title;
-    private Date deadline;
+    private String deadline;
     private int priority;
     private boolean done;
     private String description;
 
-    public Todo(int id, String title, Date deadline, int priority, boolean done, String description) {
+    public Todo(int id, String title, String deadline, int priority, boolean done, String description) {
         this.id = id;
         this.title = title;
         this.deadline = deadline;
@@ -27,7 +27,7 @@ public class Todo {
         return title;
     }
 
-    public Date getDeadline() {
+    public String getDeadline() {
         return deadline;
     }
 
@@ -45,7 +45,8 @@ public class Todo {
 
     @Override
     public String toString() {
-        return "id = " + this.id + "\n" +
+        return "\n" +
+                "\n" + "id = " + this.id + "\n" +
                 "title : " + this.title + "\n" +
                 "deadline : " + this.deadline + "\n" +
                 "priority : " + this.priority + "\n" +

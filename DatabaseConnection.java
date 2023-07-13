@@ -11,9 +11,9 @@ public class DatabaseConnection {
     private String password;
 
     public DatabaseConnection() {
-        this.url = url;
-        this.username = username;
-        this.password = password;
+        this.url = PostgreSqlConf.url;
+        this.username = PostgreSqlConf.user;
+        this.password = PostgreSqlConf.password;
     }
 
 
