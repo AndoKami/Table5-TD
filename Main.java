@@ -1,4 +1,4 @@
-package com.todo;
+package com.todo.dao;
 
 import com.todo.dao.dao;
 
